@@ -1,0 +1,12 @@
+{
+    "name": "mustafah15/dynamicapi",
+    "description": "laravel api manger",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mustafa hussain",
+            "email": "mustafa.hussain93@gmail.com"
+        }
+    ],
+    "require": {}
+}
