@@ -5,6 +5,7 @@ namespace Mustafah15\DynamicApi;
 /**
  *
  */
+ use Illuminate\Support\Facades\Response as Response;
 
 
 class ResponceHandler
@@ -14,22 +15,15 @@ class ResponceHandler
   public function respond(
   array $data ,
   $total = null,
-  $page_number = null,
-  $status = 200,
-  $headers = [])
+  $status = 200)
   {
-    $responce[
+    $responce=[
       'data'=>$data,
       'status'=>$status
     ];
-
     if(!is_null($total))
       $responce['total'] = $total;
-
-    if(!is_null($page_number))
-      $responce['page_number'] = $page_number;
-
-    return Responce::json($responce);
+    return Response::json($responce);
   }
 
 

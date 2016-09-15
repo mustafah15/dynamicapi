@@ -26,7 +26,7 @@ class ErrorHandler
             $message = $exception->getMessage();
         }
         else {
-            throw new Exception("Error Processing Request", 1);
+            throw new Exception("first argument must be instance of Exception ", 1);
         }
         $response = [
             'status' => $status,

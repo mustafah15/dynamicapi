@@ -26,13 +26,6 @@ class ApiMapper
         return $this->getSpacificKeys($keys);
   }
 
-  public function getSpacificKeys($keys)
-  {
-
-    $this->mapped = array_intersect_key($this->mapped, array_flip($keys));
-
-    return $this->mapped;
-  }
 
 
   public function mapCollectionArray($collection_arr, $keys = array())
@@ -62,4 +55,13 @@ class ApiMapper
 
     $this->mapped = $data;
   }
+
+  public function getSpacificKeys($keys)
+  {
+
+    $this->mapped = array_intersect_key($this->mapped, array_flip($keys));
+
+    return $this->mapped;
+  }
+
 }
