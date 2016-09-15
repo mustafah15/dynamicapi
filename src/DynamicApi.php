@@ -16,6 +16,15 @@ class DynamicApi
 
   public static function respond()
   {
-    
+
   }
+
+
+  public static function error()
+  {
+
+  }
+
+
+
 }
