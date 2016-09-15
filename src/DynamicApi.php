@@ -23,7 +23,7 @@ class DynamicApi
 
 
 
-  public function respond($data,$keys)
+  public function respond($data,$keys=[])
   {
       if($this->isCollection($data)) {
         $mapped_data = $this->mapper->mapCollectionArray($data,$keys);
