@@ -1,6 +1,6 @@
 {
     "name": "mustafah15/dynamicapi",
-    "description": "laravel api manger",
+    "description": "laravel api dynamic manger",
     "license": "MIT",
     "authors": [
         {
@@ -8,5 +8,7 @@
             "email": "mustafa.hussain93@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+      "php": ">=5.4.0"
+    }
 }
