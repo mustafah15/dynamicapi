@@ -2,6 +2,7 @@
 
 ###Api Manager for Laravel framework 
 
+Easy way to return response from your application with model data 
 
 ##Installation
 
